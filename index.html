@@ -39,13 +39,13 @@
 			</tr>
 		  </tbody>
 		</table>
-		<form v-show="ativo" action="submit">
+		<form v-show="ativo">
 			<input type="text" v-model="requestBody.nome" placeholder="nome" required>
 			<input type="text" v-model="requestBody.setor.nome" placeholder="setor" name="setor" required>
 			<input type="text" v-model="requestBody.salario" placeholder="salario" required>
 			<input type="email" v-model="requestBody.email" placeholder="email" required>
 			<input type="text" v-model="requestBody.idade" placeholder="idade" required>
-			<button @click.prevent="atualizarFuncionario" type="submit">Atualizar</button>
+			<button @click.prevent="atualizarFuncionario" >Atualizar</button>
 		</form>
 		<a href="./pages/novo-funcionario.html">Cadastrar novo</a>
 	  </div>

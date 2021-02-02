@@ -13,7 +13,8 @@ var vm = new Vue({
 			idade: "",
 			salario: "",
 		},
-		id: ""	
+		id: ""	,
+		obrigatorio: false,
 	},
 
 	methods: {
@@ -33,7 +34,7 @@ var vm = new Vue({
 
 		async atualizarFuncionario(event){
 			const response = await axios.put(`http://localhost:8080/funcionarios/${this.id}`, this.requestBody);
-			window.location.href ='/'
+				window.location.href ='/'
 		},
 		atualizar(event){
 			const id = event.currentTarget.value;
