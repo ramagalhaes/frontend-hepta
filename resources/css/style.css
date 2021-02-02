@@ -1,0 +1,45 @@
+form{
+    display: block;
+    margin: 0 auto;
+}
+
+input, select{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border:2px solid rgb(168, 119, 55);
+
+}
+
+#app{
+    width: 100%;
+}   
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+button{
+    border:2px solid #a87737;
+    background: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:  #a87737;
+
+}
+
+button:hover{
+    background-color: #a87737;
+    color: #fff;
+    cursor: pointer;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
